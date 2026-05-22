@@ -18,16 +18,16 @@
         },
         "$schema": {
           "type": "string"
-        }
-        ,
-        "$drafr": {
+        },
+        "$draft": {
           "type": "boolean"
         }
       },
       "required": [
         "title",
         "description",
-        "datetime"
+        "datetime",
+        "draft"
       ],
       "additionalProperties": false
     }
