@@ -7,5 +7,6 @@ export interface Blog {
         description: string;
         datetime: string;
         image?: string;
+        draft?: boolean;
     }
 }

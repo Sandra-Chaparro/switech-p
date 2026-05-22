@@ -19,6 +19,10 @@
         "$schema": {
           "type": "string"
         }
+        ,
+        "$drafr": {
+          "type": "boolean"
+        }
       },
       "required": [
         "title",
