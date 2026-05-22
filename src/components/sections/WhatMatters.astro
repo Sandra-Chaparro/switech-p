@@ -16,10 +16,9 @@
             <path d="M12 12l0 2.5"/>
           </svg>
         </div>
-        <p class="card-title">I build secure software</p>
+        <p class="card-title">  Secure by design</p>
         <p class="card-body">
-          Security isn't something I add at the end. I learn and apply it from the start,
-          so the people who use what I build are protected.
+          Security isn't a phase — it's a mindset. 
         </p>
       </div>
   
@@ -30,10 +29,9 @@
             <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/>
           </svg>
         </div>
-        <p class="card-title">I care about impact</p>
+        <p class="card-title">Mission-driven tech</p>
         <p class="card-body">
-          I choose projects that help people or the environment. My work should do some
-          good — not just function correctly.
+          I'm drawn to projects where the work serves communities, not just growth metrics. Impact is part of my definition of done.
         </p>
       </div>
   
@@ -44,10 +42,9 @@
             <path d="M3 17l4 -4l4 4l4 -8l4 4"/>
           </svg>
         </div>
-        <p class="card-title">I'm growing on purpose</p>
+        <p class="card-title">Always evolving</p>
         <p class="card-body">
-          Moving from software engineering into cybersecurity is an intentional choice.
-          I want to understand how systems fail so I can help build ones that don't.
+          Transitioning from SWE to security taught me that curiosity is a skill. I bring a developer's instincts to hard security problems.
         </p>
       </div>
   
@@ -80,8 +77,8 @@
     }
   
     .card {
-      background: var(--color-bg-secondary, #f5f5f5);
-      border: 0.5px solid var(--color-border, #e0e0e0);
+      background: var(--color-background-offset);
+      border: 0.5px solid var(--color-border);
       border-radius: 12px;
       padding: 1.25rem;
     }
@@ -110,10 +107,26 @@
       background: #E6F1FB;
       color: #185FA5;
     }
+
+    [data-theme="dark"] .icon-teal {
+    background: #0F6E5620;
+    color: #4ecca3;
+    }
+
+    [data-theme="dark"] .icon-amber {
+      background: #854F0B20;
+      color: #f6c270;
+    }
+
+    [data-theme="dark"] .icon-blue {
+      background: #185FA520;
+      color: #60a5fa;
+    }
   
     .card-title {
       font-size: 14px;
       font-weight: 500;
+      color: var(--color-text);    
       margin-bottom: 0.35rem;
       margin-top: 0;
     }
@@ -121,6 +134,7 @@
     .card-body {
       font-size: 13px;
       color: var(--color-text-secondary, #666);
+      color: var(--color-text-offset);
       line-height: 1.65;
       margin: 0;
     }
