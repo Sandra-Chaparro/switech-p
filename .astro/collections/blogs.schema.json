@@ -16,18 +16,17 @@
         "image": {
           "type": "string"
         },
+        "draft": {
+          "type": "boolean"
+        },
         "$schema": {
           "type": "string"
-        },
-        "$draft": {
-          "type": "boolean"
         }
       },
       "required": [
         "title",
         "description",
-        "datetime",
-        "draft"
+        "datetime"
       ],
       "additionalProperties": false
     }
