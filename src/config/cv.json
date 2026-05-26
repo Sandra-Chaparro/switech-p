@@ -77,16 +77,8 @@
     ],
     "socialLinks": [
         {
-            "iconName": "Github",
-            "link": "https://github.com/wasutz/astro-resume-theme"
-        },
-        {
-            "iconName": "Facebook",
-            "link": "https://facebook.com"
-        },
-        {
-            "iconName": "Instagram",
-            "link": "https://instagram.com"
+            "iconName": "Linkedin",
+            "link": "https://www.linkedin.com/in/sandrach-swdev/"
         }
     ]
 }
