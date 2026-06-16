@@ -9,31 +9,42 @@ draft: true
 
 # What are AI agents?
 
-Astro is an exciting new web development framework designed with performance in mind. By focusing on optimizing your website's speed and delivering only the necessary JavaScript, Astro aims to provide a fast and delightful experience for developers and users alike.
+"Chatbots are systems designed primarily for conversation. They interpret user input and generate responses based on their training and, in some cases, additional information sources such as databases or web searches. An example of a traditional chatbot might be a 
+customer service widget on a website. Traditional chatbots are designed purely for conversation, they respond to your questions but leave all the doing to you. In contrast the difference with AI Agents is that they
+are specifically built with tools and the ability to plan and execute multi-step tasks.
 
-## Why Astro?
+Think of it this way:
+- A chatbot helps you find information.
+- An AI agent helps you accomplish an objective.
 
-Modern web frameworks often ship too much JavaScript to the client, which can slow down websites. Astro solves this problem by using **server-side rendering** (SSR) and a unique approach called **islands architecture** to only ship JavaScript when it's needed. This results in websites that load faster and feel more responsive.
 
-### Key Features of Astro
+## AI Agents vs. Chatbots
 
-1. **Minimal JavaScript by Default**: Astro automatically reduces the amount of JavaScript sent to the client, ensuring faster page load times.
-2. **Islands Architecture**: Astro supports the islands architecture, where interactive elements (like buttons or forms) are treated as individual islands of interactivity. This allows you to deliver minimal JavaScript without sacrificing the power of client-side interactivity.
-3. **Framework Agnostic**: Whether you prefer React, Vue, Svelte, or just plain HTML, Astro allows you to mix and match various frontend frameworks in one project.
-4. **Markdown & MDX Support**: Astro makes it incredibly easy to write content using Markdown and MDX, enabling you to seamlessly integrate interactive components into your content.
-5. **Optimized for SEO**: With Astro, all the content is pre-rendered, making it highly optimized for search engines right out of the box.
+Many people confuse AI agents with chatbots because both often use Large Language Models (LLMs) as their underlying intelligence.
+The difference lies in what they do after receiving your request.
 
-## Example: Building a Blog with Astro
+A traditional chatbot follows a simple pattern:
 
-One of Astro's strong suits is how easy it makes creating static content sites such as blogs. Here's a quick snippet of how to set up a blog post using Astro and MDX:
+Question → Answer
 
-```mdx
----
-title: "My First Astro Post"
-description: "Learning Astro and building awesome websites with minimal JavaScript."
-datetime: "2024-09-28"
----
+An AI agent follows a more advanced process:
 
-# My First Astro Post
+Goal → Plan → Action → Feedback → Adjust → Complete
 
-Welcome to my Astro-powered blog! This is my first post where I explore the possibilities of creating fast, modern websites with minimal JavaScript. Astro makes it easy to get started, and the performance benefits are immediate.
+A chatbot reacts to your messages.
+
+An AI agent works toward achieving a result.
+
+### Let see a simple example to understand difference between chatbots and AI agents.
+
+Out task is to book a trip to New York next weekend.
+
+A chatbot can suggest hotels, flights, and things to do — but you still have to open each website, search, compare prices, and book everything yourself.
+An AI agent can search for available flights, compare prices, book the cheapest option, reserve a hotel, and add everything to your calendar — all on its own, without you lifting a finger.
+
+Note: The actions an AI agent can perform depend on the permissions and tools it has been granted. Some agents may only make recommendations, while others can take actions such as sending emails, updating calendars, or completing bookings after receiving user approval.
+
+## Conclusion
+
+In short, chatbots answer questions, while AI agents take action to achieve outcomes. Whenever relying on AI agents we need to be aware of the risks that may bring to our workflows.
+Keeping a human on the loop to verify every decision is recommended to make sure nothing is getting out of control.
