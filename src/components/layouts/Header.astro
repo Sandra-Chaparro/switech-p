@@ -4,7 +4,7 @@ import ThemeToggle from "../common/ThemeToggle.astro";
 import { menuItems } from "../../config/cv.json";
 ---
 
-<header class="bg-background py-4">
+<header class="bg-background py-4 relative">
   <div class="container max-w-6xl mx-auto flex justify-between items-center px-4 md:px-8">
     <!-- Logo -->
     <a href="/">
@@ -37,7 +37,7 @@ import { menuItems } from "../../config/cv.json";
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden sm:hidden">
+  <div id="mobile-menu" class="hidden sm:hidden absolute right-4 md:right-8 top-full mt-2 w-44 rounded-lg border border-default bg-background shadow-lg overflow-hidden z-50">
     {menuItems.map((item) => (
       <a href={item.link} class="block px-4 py-2 hover:bg-background-offset">
         {item.name}
