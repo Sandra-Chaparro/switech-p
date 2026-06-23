@@ -25,21 +25,21 @@ import { menuItems } from "../../config/cv.json";
         ))}
       </nav>
 
+      <ThemeToggle />
+
       <!-- Mobile Menu Button -->
       <div class="sm:hidden flex">
         <button id="menu-btn" class="focus:outline-none" aria-label="Mobile open menu">
           <Icon name="Menu" class="size-6"/>
         </button>
       </div>
-
-      <ThemeToggle />
     </div>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden sm:hidden absolute right-4 md:right-8 top-full mt-2 w-44 rounded-lg border border-default bg-background shadow-lg overflow-hidden z-50">
+  <div id="mobile-menu" class="hidden sm:hidden absolute right-4 md:right-8 top-full mt-2 w-44 rounded-lg bg-background shadow-lg overflow-hidden z-50">
     {menuItems.map((item) => (
-      <a href={item.link} class="block px-4 py-2 hover:bg-background-offset">
+      <a href={item.link} class="block px-4 py-2 text-right hover:bg-background-offset">
         {item.name}
       </a>
     ))}
