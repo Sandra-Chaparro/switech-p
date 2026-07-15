@@ -30,7 +30,7 @@ const {Content} = await blog.render();
 
 <Layout title={blog.data.title} description={blog.data.description} image={blog.data.image}>
     <section class="flex justify-center mt-12 px-4 sm:px-6 lg:px-0">
-        <div id="markdown" class="prose prose-lg overflow-visible relative mb-5">
+        <div id="markdown" class="prose prose-sm sm:prose-lg overflow-visible relative mb-5">
             <Content />
         </div>
     </section>
