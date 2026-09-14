@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import heroImage from '../../assets/sandra_pic.jpg';
-import { basic } from '../../config/cv.json';
+import { basic, focusAreas } from '../../config/cv.json';
 ---
 
 <section class="py-5 px-4 sm:py-10 lg:py-16">
@@ -11,11 +11,11 @@ import { basic } from '../../config/cv.json';
                 <Image class="w-40 sm:w-52 md:w-72 lg:w-80 rounded-full object-cover"
                     src={heroImage}
                     loading="eager"
-                    alt="Resume Theme - Sandra Resume" />
+                    alt={`${basic?.name} — ${basic?.job}`} />
             </div>
             <div>
                 <p class="text-lg text-offset">
-                    {basic?.job}
+                    {basic?.tagline || basic?.job}
                 </p>
 
                 <h1 class="text-2xl font-bold sm:text-4xl lg:text-5xl mt-3">
@@ -26,12 +26,26 @@ import { basic } from '../../config/cv.json';
                     {basic?.summary}
                 </p>
 
-                <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                    <a href=`/cv/${basic?.cv_file_name}` title="Download CV" download
-                        class="inline-flex items-center justify-center px-10 py-4 text-base text-white
+                <div class="mt-5 flex flex-wrap gap-2">
+                    {focusAreas.map((area) => (
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-background-offset text-offset border border-default">
+                            {area}
+                        </span>
+                    ))}
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="/#projects"
+                        class="inline-flex items-center justify-center px-8 py-3.5 text-base text-white
                             font-semibold transition-all duration-200 rounded
                             bg-primary hover:bg-secondary focus:bg-secondary" role="button">
-                        Download CV
+                        View My Work
+                    </a>
+                    <a href="/#resume"
+                        class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold
+                            transition-all duration-200 rounded border border-default
+                            hover:bg-background-offset focus:bg-background-offset" role="button">
+                        Résumé
                     </a>
                 </div>
             </div>

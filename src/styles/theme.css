@@ -6,6 +6,10 @@
     --color-background: theme("colors.gray.50");
     --color-background-offset: theme("colors.gray.100");
     --color-border: theme("colors.gray.900" / 10%);
+    --color-success: theme("colors.teal.700");
+    --color-success-bg: theme("colors.teal.50");
+    --color-warning: theme("colors.amber.700");
+    --color-warning-bg: theme("colors.amber.50");
 }
 
 [data-theme="dark"] {
@@ -16,4 +20,8 @@
     --color-background: theme("colors.gray.900");
     --color-background-offset: theme("colors.gray.800");
     --color-border: theme("colors.gray.50" / 10%);
+    --color-success: theme("colors.teal.400");
+    --color-success-bg: theme("colors.teal.400" / 12%);
+    --color-warning: theme("colors.amber.400");
+    --color-warning-bg: theme("colors.amber.400" / 12%);
 }

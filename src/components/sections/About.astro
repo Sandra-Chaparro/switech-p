@@ -1,0 +1,59 @@
+---
+import SectionHeading from '../common/SectionHeading.astro';
+import { basic } from '../../config/cv.json';
+
+const pillars = [
+	{
+		title: "Secure by design",
+		body: "Security isn't a phase — it's a mindset.",
+		color: "success",
+		icon: "M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0M12 12l0 2.5",
+	},
+	{
+		title: "Mission-driven tech",
+		body: "I'm drawn to projects where the work serves communities, not just growth metrics. Impact is part of my definition of done.",
+		color: "warning",
+		icon: "M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572",
+	},
+	{
+		title: "Always evolving",
+		body: "Transitioning from SWE to security taught me that curiosity is a skill. I bring a developer's instincts to hard security problems.",
+		color: "primary",
+		icon: "M3 17l4 -4l4 4l4 -8l4 4",
+	},
+];
+
+const badgeClasses: Record<string, string> = {
+	success: "bg-success-bg text-success",
+	warning: "bg-warning-bg text-warning",
+	primary: "bg-primary/10 text-primary",
+};
+---
+
+<section id="about" class="scroll-mt-20 py-10">
+	<div class="container mx-auto px-4 max-w-5xl">
+		<SectionHeading eyebrow="About" title="Who I am" />
+
+		<p class="text-base sm:text-lg leading-relaxed text-offset max-w-3xl">
+			{basic?.about}
+		</p>
+
+		<p class="mt-6 text-xs font-semibold uppercase tracking-widest text-offset">
+			What matters to me
+		</p>
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+			{pillars.map((pillar) => (
+				<div class="p-5 bg-background-offset border border-default rounded-xl">
+					<div class={`w-9 h-9 rounded-lg flex items-center justify-center mb-3 ${badgeClasses[pillar.color]}`}>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d={pillar.icon} />
+						</svg>
+					</div>
+					<p class="text-sm font-medium mb-1">{pillar.title}</p>
+					<p class="text-sm text-offset leading-relaxed">{pillar.body}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

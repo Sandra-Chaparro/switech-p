@@ -1,0 +1,35 @@
+---
+import SectionHeading from '../common/SectionHeading.astro';
+import { skills } from '../../config/cv.json';
+---
+
+<section id="skills" class="scroll-mt-20 py-10 bg-background-offset/40">
+	<div class="container mx-auto px-4 max-w-5xl">
+		<SectionHeading eyebrow="Toolkit" title="Technical Skills" />
+
+		<div class="flex flex-wrap gap-2.5 mb-10">
+			{skills.technical.map((skill) => (
+				<span class="text-sm px-3 py-1.5 rounded-full bg-background text-default border border-default">
+					{skill}
+				</span>
+			))}
+		</div>
+
+		<p class="text-xs font-semibold uppercase tracking-widest text-offset mb-4">
+			AI Fluency
+		</p>
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+			{skills.aiBadges.map((badge) => (
+				<div class="p-4 bg-background-offset border border-default rounded-xl">
+					<p class="text-sm font-semibold">{badge.name}</p>
+					<div class="flex items-center justify-between mt-2">
+						<p class="text-xs text-offset">{badge.issuer}</p>
+						<span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-success-bg text-success">
+							{badge.status}
+						</span>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

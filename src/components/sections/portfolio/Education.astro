@@ -1,6 +1,12 @@
 ---
+import SectionHeading from '../../common/SectionHeading.astro';
 import CardListSection from './CardListSection.astro';
 import { education } from '../../../config/cv.json';
 ---
 
-<CardListSection title="Education" items={education} />
+<section id="education" class="scroll-mt-20 py-10">
+	<div class="container mx-auto px-4 max-w-5xl">
+		<SectionHeading eyebrow="Background" title="Education" />
+		<CardListSection items={education} />
+	</div>
+</section>

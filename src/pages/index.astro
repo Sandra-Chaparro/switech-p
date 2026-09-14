@@ -1,17 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/sections/Hero.astro';
-import Resume from '../components/sections/Resume.astro';
-import WhatMatters from '../components/sections/WhatMatters.astro';
-import Portfolio from '../components/sections/portfolio/Portfolio.astro';
+import About from '../components/sections/About.astro';
+import FeaturedProjects from '../components/sections/FeaturedProjects.astro';
+import ProfessionalExperience from '../components/sections/portfolio/ProfessionalExperience.astro';
+import Cybersecurity from '../components/sections/Cybersecurity.astro';
+import TechnicalSkills from '../components/sections/TechnicalSkills.astro';
+import Education from '../components/sections/portfolio/Education.astro';
+import ResumeSection from '../components/sections/ResumeSection.astro';
+import Contact from '../components/sections/Contact.astro';
 ---
 
 <Layout
 	title="Sandra Chaparro"
-	description="Software Engineer in the DFW area specializing in cybersecurity and DevSecOps. Portfolio, resume, and blog."
+	description="Software Engineer in the DFW area transitioning into cybersecurity — application security, threat intelligence, OSINT, threat hunting, and AI security. Portfolio, experience, projects, and resume."
 >
 	<Hero />
-	<WhatMatters />
-	<Resume />
-	<Portfolio />
+	<About />
+	<FeaturedProjects />
+	<ProfessionalExperience />
+	<Cybersecurity />
+	<TechnicalSkills />
+	<Education />
+	<ResumeSection />
+	<Contact />
 </Layout>

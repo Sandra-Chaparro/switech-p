@@ -6,6 +6,10 @@ export default {
 			colors: {
 				primary: "var(--color-primary)",
 				secondary: "var(--color-secondary)",
+				success: "var(--color-success)",
+				"success-bg": "var(--color-success-bg)",
+				warning: "var(--color-warning)",
+				"warning-bg": "var(--color-warning-bg)",
 			},
 			textColor: {
 				default: "var(--color-text)",

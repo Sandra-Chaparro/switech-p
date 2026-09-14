@@ -1,0 +1,41 @@
+---
+import SectionHeading from '../common/SectionHeading.astro';
+import ProjectCard from './ProjectCard.astro';
+import { projects } from '../../config/cv.json';
+
+import drTileImg from '../../assets/projects/dr-tile-solutions.jpg';
+import mcBarberImg from '../../assets/projects/mc-the-barber.jpg';
+import salvatierraImg from '../../assets/projects/salvatierra-digital.jpg';
+
+const images: Record<string, ImageMetadata> = {
+	'dr-tile-solutions.jpg': drTileImg,
+	'mc-the-barber.jpg': mcBarberImg,
+	'salvatierra-digital.jpg': salvatierraImg,
+};
+---
+
+<section id="projects" class="scroll-mt-20 py-10 bg-background-offset/40">
+	<div class="container mx-auto px-4 max-w-5xl">
+		<SectionHeading
+			eyebrow="Work"
+			title="Featured Projects"
+			subtitle="Live client and business websites I designed and built, alongside full-stack applications spanning healthcare data and authentication."
+		/>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			{projects.map((project) => (
+				<ProjectCard
+					title={project.title}
+					type={project.type}
+					org={project.org}
+					location={project.location}
+					years={project.years}
+					bullets={project.bullets}
+					tech={project.tech}
+					repoUrl={project.repoUrl}
+					liveUrl={project.liveUrl}
+					image={project.image ? images[project.image] : undefined}
+				/>
+			))}
+		</div>
+	</div>
+</section>

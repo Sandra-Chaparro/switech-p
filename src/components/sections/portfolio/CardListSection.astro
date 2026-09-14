@@ -5,27 +5,21 @@ interface Item {
   title: string;
   sub_title: string;
   years: string;
-  details?: string;
+  bullets?: string[];
+  tech?: string[];
 }
 
-const { title, items } = Astro.props;
+const { items } = Astro.props;
 ---
 
-<section class="py-8 bg-background">
-  <div class="container mx-auto px-4">
-    <h2 class="text-2xl lg:text-3xl font-semibold text-center mb-8">
-        {title}
-    </h2>
-
-    <ul class="space-y-4">
-      {items.map((item: Item) => (
-        <CardListItem
-          title={item.title}
-          sub_title={item.sub_title}
-          years={item.years}
-          details={item?.details}
-        />
-      ))}
-    </ul>
-  </div>
-</section>
+<ul class="space-y-4">
+  {items.map((item: Item) => (
+    <CardListItem
+      title={item.title}
+      sub_title={item.sub_title}
+      years={item.years}
+      bullets={item?.bullets}
+      tech={item?.tech}
+    />
+  ))}
+</ul>
