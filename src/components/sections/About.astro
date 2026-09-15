@@ -30,7 +30,7 @@ const badgeClasses: Record<string, string> = {
 };
 ---
 
-<section id="about" class="scroll-mt-20 py-10">
+<section id="about" class="scroll-mt-20 py-8">
 	<div class="container mx-auto px-4 max-w-5xl">
 		<SectionHeading eyebrow="About" title="Who I am" />
 
@@ -43,7 +43,7 @@ const badgeClasses: Record<string, string> = {
 		</p>
 		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
 			{pillars.map((pillar) => (
-				<div class="p-5 bg-background-offset border border-default rounded-xl">
+				<div class="p-4 bg-background-offset border border-default rounded-xl">
 					<div class={`w-9 h-9 rounded-lg flex items-center justify-center mb-3 ${badgeClasses[pillar.color]}`}>
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path stroke="none" d="M0 0h24v24H0z" fill="none" />

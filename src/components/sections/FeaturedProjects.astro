@@ -12,24 +12,24 @@ const images: Record<string, ImageMetadata> = {
 	'mc-the-barber.jpg': mcBarberImg,
 	'salvatierra-digital.jpg': salvatierraImg,
 };
+
+const liveProjects = projects.filter((p) => p.image);
+const otherProjects = projects.filter((p) => !p.image);
 ---
 
-<section id="projects" class="scroll-mt-20 py-10 bg-background-offset/40">
-	<div class="container mx-auto px-4 max-w-5xl">
+<section id="projects" class="scroll-mt-20 py-8 bg-background-offset/40">
+	<div class="container mx-auto px-4 max-w-6xl">
 		<SectionHeading
 			eyebrow="Work"
 			title="Featured Projects"
-			subtitle="Live client and business websites I designed and built, alongside full-stack applications spanning healthcare data and authentication."
+			subtitle="Live websites I designed and built end-to-end."
 		/>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			{projects.map((project) => (
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+			{liveProjects.map((project) => (
 				<ProjectCard
 					title={project.title}
 					type={project.type}
-					org={project.org}
-					location={project.location}
-					years={project.years}
-					bullets={project.bullets}
+					description={project.description}
 					tech={project.tech}
 					repoUrl={project.repoUrl}
 					liveUrl={project.liveUrl}
@@ -37,5 +37,30 @@ const images: Record<string, ImageMetadata> = {
 				/>
 			))}
 		</div>
+
+		{otherProjects.length > 0 && (
+			<>
+				<p class="mt-12 text-xs font-semibold uppercase tracking-widest text-offset mb-4">
+					Other Projects
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+					{otherProjects.map((project) => (
+						<ProjectCard
+							title={project.title}
+							type={project.type}
+							org={project.org}
+							location={project.location}
+							years={project.years}
+							description={project.description}
+							bullets={project.bullets}
+							tech={project.tech}
+							repoUrl={project.repoUrl}
+							repoUrls={project.repoUrls}
+							liveUrl={project.liveUrl}
+						/>
+					))}
+				</div>
+			</>
+		)}
 	</div>
 </section>

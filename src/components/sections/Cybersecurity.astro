@@ -4,12 +4,12 @@ import CertItem from './CertItem.astro';
 import { cybersecurityHighlights, certifications, focusAreas } from '../../config/cv.json';
 ---
 
-<section id="cybersecurity" class="scroll-mt-20 py-10">
+<section id="cybersecurity" class="scroll-mt-20 py-8">
 	<div class="container mx-auto px-4 max-w-5xl">
 		<SectionHeading
 			eyebrow="Transition"
 			title="Cybersecurity"
-			subtitle="I'm a software engineer building focused expertise in cybersecurity — grounded in real application security work, and growing into threat intelligence, OSINT, threat hunting, and AI security through certification study and continued learning."
+			subtitle="Grounded in real application security work, and growing into threat intelligence, OSINT, and threat hunting through certification study and continued learning."
 		/>
 
 		<p class="text-xs font-semibold uppercase tracking-widest text-offset mb-3">
@@ -17,7 +17,7 @@ import { cybersecurityHighlights, certifications, focusAreas } from '../../confi
 		</p>
 		<div class="flex flex-wrap gap-2 mb-10">
 			{focusAreas.map((area) => (
-				<span class="text-sm px-3 py-1.5 rounded-full bg-background-offset text-offset border border-default">
+				<span class="text-xs px-2.5 py-1 rounded-full bg-background-offset text-offset border border-default">
 					{area}
 				</span>
 			))}

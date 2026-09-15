@@ -3,13 +3,13 @@ import SectionHeading from '../common/SectionHeading.astro';
 import { skills } from '../../config/cv.json';
 ---
 
-<section id="skills" class="scroll-mt-20 py-10 bg-background-offset/40">
+<section id="skills" class="scroll-mt-20 py-8 bg-background-offset/40">
 	<div class="container mx-auto px-4 max-w-5xl">
 		<SectionHeading eyebrow="Toolkit" title="Technical Skills" />
 
 		<div class="flex flex-wrap gap-2.5 mb-10">
 			{skills.technical.map((skill) => (
-				<span class="text-sm px-3 py-1.5 rounded-full bg-background text-default border border-default">
+				<span class="text-xs px-2.5 py-1 rounded-full bg-background text-default border border-default">
 					{skill}
 				</span>
 			))}

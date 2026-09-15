@@ -2,43 +2,34 @@
     "basic": {
         "name": "Sandra Chaparro",
         "job": "Software Engineer",
-        "tagline": "Software Engineer transitioning into Cybersecurity",
-        "summary": "Software engineer with a full-stack background, now building focused expertise in application security, threat intelligence, OSINT, threat hunting, and AI security.",
+        "tagline": "Software Engineer | Cybersecurity",
+        "summary": "Full-stack software engineer building focused expertise in cybersecurity.",
         "about": "I'm a software engineer based in the Dallas–Fort Worth area with a full-stack background spanning healthcare EHR platforms, dashboards, and client web products. I'm now transitioning into cybersecurity — grounded in real application security work I've done in production (authentication, authorization, and protecting sensitive data), and building focused knowledge in threat intelligence, OSINT, threat hunting, and AI security through certification study and self-directed learning. I care about technology that actually helps people, and I bring a developer's instincts to security problems: curious, detail-oriented, and comfortable learning in public.",
         "location": "Dallas–Fort Worth, TX",
-        "cv_file_name": "sandra_ch.pdf"
+        "cv_file_name": "SandraChResume.pdf"
     },
     "focusAreas": [
-        "Software Engineering",
-        "Application Security",
         "Threat Intelligence",
         "OSINT",
         "Threat Hunting",
+        "Application Security",
         "AI Security"
     ],
     "experiences": [
         {
             "title": "Software Engineer",
             "company": "Mayan Technologies",
-            "location": "Allen, TX",
             "years": "April 2025 – January 2026",
-            "tech": ["Node.js", "Express", "React", "Next.js", "MySQL", "MongoDB", "CronJobs", "APIs", "Chakra UI", "Jira", "CI/CD"],
+            "tech": ["Node.js", "Express", "React", "Next.js", "MySQL", "APIs"],
             "bullets": [
                 "Built full-stack features for a specialty healthcare EHR — secure payment processing, appointment scheduling, and product sales modules serving 15+ practitioners.",
-                "Built a comprehensive refund management feature integrating the Stripe API, handling partial/full refunds, transaction tracking, and automated reconciliation.",
                 "Diagnosed and resolved critical performance bottlenecks by optimizing inefficient MySQL queries, cutting API response time from 3.5s to 207ms (a 70% reduction).",
-                "Strengthened API security by implementing authentication and authorization middleware across endpoints, preventing unauthorized access to sensitive patient information.",
-                "Designed and implemented a real-time KPI dashboard, enabling management to identify trends and prioritize debt recovery.",
-                "Improved cronjobs synchronizing clinical correspondence with Docman Connect, validating data consistency through Kafka events.",
-                "Maintained CI/CD workflows with Git-based version control and implemented security best practices within a 3-tier architecture.",
-                "Integrated the DocuSign eSignature API using C# and JWT authentication, automating document signing workflows.",
-                "Developed custom ERP client solutions, including BAQ reports, for a range of clients including ITAR-regulated organizations."
+                "Strengthened API security by implementing authentication and authorization middleware across endpoints, preventing unauthorized access to sensitive patient information."
             ]
         },
         {
             "title": "Web Developer",
             "company": "SWITECH",
-            "location": "Allen, TX",
             "years": "July 2024 – April 2025",
             "tech": ["React", "Bootstrap", "Astro", "Figma", "Vercel"],
             "bullets": [
@@ -50,7 +41,6 @@
         {
             "title": "Computer Science Tutor",
             "company": "Superprof",
-            "location": "Remote",
             "years": "December 2022 – July 2024",
             "tech": ["Java", "C++", "JavaScript"],
             "bullets": [
@@ -61,14 +51,11 @@
         {
             "title": "Software Engineer Co-Op",
             "company": "Motorola Solutions, Inc.",
-            "location": "Allen, TX",
             "years": "May 2022 – October 2022",
-            "tech": ["React", "OAuth 2.0", "Jira API", "Node.js", "Express", "Azure Pipelines", "Docker", "Kubernetes"],
+            "tech": ["React", "OAuth 2.0", "Jira API", "Node.js", "Express"],
             "bullets": [
                 "Developed a centralized React dashboard with OAuth 2.0 authentication integrating the Jira API, providing real-time project visibility across sites.",
-                "Improved deployment efficiency by optimizing Azure PaaS CI/CD pipelines with YAML configurations.",
                 "Built responsive Bootstrap front-end interfaces, improving page load performance and data interactivity.",
-                "Optimized Docker image lifecycle management, improving build efficiency and reducing infrastructure overhead.",
                 "Completed FedRAMP compliance training covering security controls, authorization requirements, and industry best practices for services handling federal government data."
             ]
         }
@@ -95,11 +82,7 @@
             "type": "Freelance Client Website",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "dr-tile-solutions.jpg",
-            "bullets": [
-                "Designed and developed a business website for a tile and remodeling company from the ground up.",
-                "Built out services, project gallery, service areas, and FAQ pages to help customers understand offerings at a glance.",
-                "Focused the layout and copy around strong calls to action to drive quote requests."
-            ],
+            "description": "A business website for a tile and remodeling company, with services, a project gallery, service areas, and FAQs built to drive quote requests.",
             "repoUrl": "",
             "liveUrl": "https://drtile-solutions.vercel.app/"
         },
@@ -108,11 +91,7 @@
             "type": "Freelance Client Website",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "mc-the-barber.jpg",
-            "bullets": [
-                "Designed and developed a website for a local barbershop to showcase its services and brand.",
-                "Built a gallery, testimonials, and location sections to build trust with prospective clients.",
-                "Added FAQs and booking/contact functionality to make it easy for customers to book an appointment."
-            ],
+            "description": "A website for a local barbershop featuring a gallery, testimonials, location details, FAQs, and booking/contact functionality.",
             "repoUrl": "",
             "liveUrl": "https://mcthebarber.com/"
         },
@@ -121,13 +100,16 @@
             "type": "My Web Development Business",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "salvatierra-digital.jpg",
-            "bullets": [
-                "Designed and built the website for my own web development business, Salvatierra Digital.",
-                "Represents the services I offer clients: custom website development, SEO, and ongoing website support.",
-                "Built with a clean, conversion-focused layout covering services, pricing, and FAQs."
-            ],
+            "description": "The website for my own web development business, offering custom website development, SEO, and ongoing website support.",
             "repoUrl": "",
             "liveUrl": "https://salvatierra-digital.vercel.app/"
+        },
+        {
+            "title": "Raptor CRM",
+            "type": "Personal Project — In Progress",
+            "description": "A mobile-first CRM replacing a paper notebook for a user juggling two sales roles — car sales and independent medical insurance — keeping both client lists organized and quick to access between calls.",
+            "repoUrl": "https://github.com/Sandra-Chaparro/raptor-crm",
+            "liveUrl": ""
         },
         {
             "title": "Dental Practice Management System (EHR)",
@@ -142,6 +124,10 @@
                 "Designed responsive wireframes in Figma and implemented a modern front-end interface using TypeScript and Tailwind CSS."
             ],
             "repoUrl": "",
+            "repoUrls": [
+                { "label": "Frontend Repo", "url": "https://github.com/Sandra-Chaparro/smile_works_app_ui" },
+                { "label": "Backend Repo", "url": "https://github.com/Sandra-Chaparro/smile_works_app_backend" }
+            ],
             "liveUrl": ""
         },
         {
@@ -156,7 +142,7 @@
                 "Built an ingredient-matching recommendation algorithm to reduce food waste and streamline meal planning.",
                 "Delivered iterative features across the full SDLC using a Kanban methodology."
             ],
-            "repoUrl": "",
+            "repoUrl": "https://github.com/Sandra-Chaparro/dsd-03-2024",
             "liveUrl": ""
         }
     ],
@@ -227,14 +213,12 @@
         ]
     },
     "menuItems": [
-        { "name": "About", "link": "/#about" },
         { "name": "Projects", "link": "/#projects" },
         { "name": "Experience", "link": "/#experience" },
         { "name": "Cybersecurity", "link": "/#cybersecurity" },
+        { "name": "About", "link": "/#about" },
         { "name": "Skills", "link": "/#skills" },
         { "name": "Education", "link": "/#education" },
-        { "name": "Resume", "link": "/#resume" },
-        { "name": "Contact", "link": "/#contact" },
-        { "name": "Blog", "link": "/blogs" }
+        { "name": "Contact", "link": "/#contact" }
     ]
 }
