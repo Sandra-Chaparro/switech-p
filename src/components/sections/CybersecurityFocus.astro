@@ -1,0 +1,53 @@
+---
+import SectionHeading from '../common/SectionHeading.astro';
+import CertItem from './CertItem.astro';
+import { focusAreas, certifications } from '../../config/cv.json';
+
+const icons: Record<string, string> = {
+	'Application Security': 'M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3M9 12l2 2l4 -4',
+	'Threat Intelligence': 'M3 12h4l3 8l4 -16l3 8h4',
+	'OSINT': 'M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M21 21l-6 -6',
+	'Threat Hunting': 'M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M12 3l0 3M12 18l0 3M3 12l3 0M18 12l3 0',
+	'AI Security': 'M9 4h6v3h3v6h-3v3h-6v-3h-3v-6h3zM9 9h6v6h-6z',
+};
+---
+
+<section id="cybersecurity-focus" class="scroll-mt-20 py-10 sm:py-14 lg:py-16 bg-background-offset/40">
+	<div class="container mx-auto px-4 max-w-6xl">
+		<SectionHeading
+			eyebrow="Roadmap"
+			title="Cybersecurity Focus"
+			subtitle="Where I'm focusing my transition: application security, threat intelligence, OSINT, threat hunting, and AI security."
+		/>
+
+		<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-14">
+			{focusAreas.map((area) => (
+				<div class="p-3 text-center bg-background border border-default rounded-xl transition-shadow duration-200 hover:shadow-lg hover:border-primary/30">
+					<div class="mx-auto w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d={icons[area]} />
+						</svg>
+					</div>
+					<p class="text-xs font-medium leading-snug">{area}</p>
+				</div>
+			))}
+		</div>
+
+		<p class="font-mono text-xs uppercase tracking-widest text-offset mb-4">
+			Supporting Certifications &amp; Training
+		</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+			{certifications.map((cert) => (
+				<CertItem
+					name={cert.name}
+					issuer={cert.issuer}
+					status={cert.status}
+					note={cert.note}
+					fileName={cert.fileName}
+					credentialUrl={cert.credentialUrl}
+				/>
+			))}
+		</div>
+	</div>
+</section>

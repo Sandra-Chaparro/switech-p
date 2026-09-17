@@ -2,19 +2,32 @@
     "basic": {
         "name": "Sandra Chaparro",
         "job": "Software Engineer",
-        "tagline": "Software Engineer | Cybersecurity",
-        "summary": "Full-stack software engineer building focused expertise in cybersecurity.",
-        "about": "I'm a software engineer based in the Dallas–Fort Worth area with a full-stack background spanning healthcare EHR platforms, dashboards, and client web products. I'm now transitioning into cybersecurity — grounded in real application security work I've done in production (authentication, authorization, and protecting sensitive data), and building focused knowledge in threat intelligence, OSINT, threat hunting, and AI security through certification study and self-directed learning. I care about technology that actually helps people, and I bring a developer's instincts to security problems: curious, detail-oriented, and always growing.",
+        "tagline": "Software Engineer transitioning into Cybersecurity",
+        "summary": "I bring real software engineering and application-security experience into my transition into cybersecurity.",
+        "about": "I'm a software engineer based in the Dallas–Fort Worth area. My path started in Computer Science, moved into full-stack software engineering, and has run through production systems ever since — healthcare EHR platforms, internal dashboards, and client web products. That production work kept putting real security problems in front of me: authenticating users, authorizing access, and protecting sensitive data. Cybersecurity is the next deliberate step on that same path, not a restart — I'm building focused knowledge in threat intelligence, OSINT, threat hunting, and AI security through certification study and self-directed learning, on top of the application-security experience I already have. I care about technology that actually helps people, and I bring a developer's instincts to security problems: curious, detail-oriented, and always growing.",
         "location": "Dallas–Fort Worth, TX",
         "cv_file_name": "SandraChResume.pdf"
     },
     "focusAreas": [
+        "Application Security",
         "Threat Intelligence",
         "OSINT",
         "Threat Hunting",
-        "Application Security",
         "AI Security"
     ],
+    "securityJourney": {
+        "narrative": "My move into cybersecurity isn't a cold start — production engineering kept putting real security work in front of me: protecting patient data, securing APIs, and completing federal compliance training. This is a continuation of that work, not a departure from it.",
+        "applied": [
+            "Implemented authentication and authorization middleware protecting sensitive patient data in a production healthcare EHR.",
+            "Built JWT-based authentication and role-based access control (RBAC) to safeguard protected health information (PHI).",
+            "Completed FedRAMP compliance training covering security controls, authorization requirements, and best practices for federal data."
+        ],
+        "learning": [
+            "Studying for the CISSP certification (ISC2) — in progress.",
+            "Studying for CompTIA Security+ — in progress.",
+            "Applying security-first practices in day-to-day development work while building toward threat intelligence, OSINT, threat hunting, and AI security."
+        ]
+    },
     "experiences": [
         {
             "title": "Software Engineer",
@@ -79,7 +92,8 @@
     "projects": [
         {
             "title": "DR Tile Solutions",
-            "type": "Freelance Client Website",
+            "category": "client",
+            "type": "Client Website",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "dr-tile-solutions.jpg",
             "description": "A business website for a tile and remodeling company, with services, a project gallery, service areas, and FAQs built to drive quote requests.",
@@ -88,7 +102,8 @@
         },
         {
             "title": "MC the Barber",
-            "type": "Freelance Client Website",
+            "category": "client",
+            "type": "Client Website",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "mc-the-barber.jpg",
             "description": "A website for a local barbershop featuring a gallery, testimonials, location details, FAQs, and booking/contact functionality.",
@@ -97,7 +112,8 @@
         },
         {
             "title": "Salvatierra Digital",
-            "type": "My Web Development Business",
+            "category": "client",
+            "type": "My Software Development Business",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
             "image": "salvatierra-digital.jpg",
             "description": "The website for my own web development business, offering custom website development, SEO, and ongoing website support.",
@@ -106,22 +122,22 @@
         },
         {
             "title": "Raptor CRM",
-            "type": "Personal Project — In Progress",
+            "category": "engineering",
+            "type": "In Progress",
             "description": "A mobile-first CRM replacing a paper notebook for a user juggling two sales roles — car sales and independent medical insurance — keeping both client lists organized and quick to access between calls.",
             "repoUrl": "https://github.com/Sandra-Chaparro/raptor-crm",
             "liveUrl": ""
         },
         {
             "title": "Dental Practice Management System (EHR)",
+            "category": "engineering",
             "org": "DSD Cohort",
-            "location": "Plano, TX",
             "years": "February – March 2025",
             "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Express.js", "JWT", "Linux", "Figma"],
             "bullets": [
-                "Architected a multi-tenant EHR platform using Next.js and Express.js, enabling seamless support for multiple dental practices from a single codebase.",
+                "Architected a multi-tenant EHR platform enabling seamless support for multiple dental practices from a single codebase.",
                 "Developed RESTful APIs for appointment scheduling, treatment tracking, payment processing, and product sales.",
-                "Implemented JWT-based authentication and role-based access control, protecting sensitive patient health information.",
-                "Designed responsive wireframes in Figma and implemented a modern front-end interface using TypeScript and Tailwind CSS."
+                "Implemented JWT-based authentication and role-based access control, protecting sensitive patient health information."
             ],
             "repoUrl": "",
             "repoUrls": [
@@ -132,39 +148,38 @@
         },
         {
             "title": "Grocery Inventory Management System",
+            "category": "engineering",
             "org": "DSD Cohort",
-            "location": "Plano, TX",
             "years": "March – April 2024",
             "tech": ["React", "MongoDB", "REST APIs"],
             "bullets": [
                 "Developed a full-stack React application that suggests 100+ recipes based on available ingredients and auto-generates grocery lists.",
-                "Integrated a third-party recipe API and designed a MongoDB backend to store API responses and user preferences.",
-                "Built an ingredient-matching recommendation algorithm to reduce food waste and streamline meal planning.",
-                "Delivered iterative features across the full SDLC using a Kanban methodology."
+                "Integrated a third-party recipe API and designed a MongoDB backend to store API responses and user preferences."
             ],
             "repoUrl": "https://github.com/Sandra-Chaparro/dsd-03-2024",
             "liveUrl": ""
         }
     ],
     "skills": {
-        "technical": [
-            "JavaScript", "TypeScript", "SQL", "C#", "Node.js", "Express",
-            "React", "Next.js", "Chakra UI", "Tailwind CSS", "Bootstrap",
-            "MySQL (Sequelize)", "MongoDB (Mongoose)",
-            "CI/CD", "Linux", "Git/GitHub", "APIs", "OAuth 2.0", "JWT"
-        ],
-        "aiBadges": [
-            { "name": "AI Fluency Framework & Foundations", "issuer": "Anthropic", "status": "Completed" },
-            { "name": "Claude Code 101", "issuer": "Anthropic", "status": "Completed" },
-            { "name": "Claude 101", "issuer": "Anthropic", "status": "Completed" }
+        "groups": [
+            {
+                "label": "Software Engineering",
+                "items": ["JavaScript", "TypeScript", "React", "Next.js", "Chakra UI", "Tailwind CSS", "Bootstrap", "C#"]
+            },
+            {
+                "label": "Application & API Security",
+                "items": ["OAuth 2.0", "JWT", "Authentication & Authorization", "RBAC"]
+            },
+            {
+                "label": "Databases & Backend",
+                "items": ["Node.js", "Express", "SQL", "MySQL (Sequelize)", "MongoDB (Mongoose)", "APIs"]
+            },
+            {
+                "label": "Tools & Platforms",
+                "items": ["Git/GitHub", "CI/CD", "Linux"]
+            }
         ]
     },
-    "cybersecurityHighlights": [
-        "Implemented authentication and authorization middleware protecting sensitive patient data in a production healthcare EHR.",
-        "Built JWT-based authentication and role-based access control (RBAC) to safeguard protected health information (PHI).",
-        "Completed FedRAMP compliance training covering security controls, authorization requirements, and best practices for federal data.",
-        "Actively studying for CISSP and CompTIA Security+ while applying security-first practices in day-to-day development work."
-    ],
     "certifications": [
         {
             "name": "ISC2 Certified in Cybersecurity (CC) — Cert Prep",
@@ -186,6 +201,30 @@
             "name": "CompTIA Security+",
             "issuer": "CompTIA",
             "status": "In Progress",
+            "note": "",
+            "fileName": "",
+            "credentialUrl": ""
+        },
+        {
+            "name": "AI Fluency Framework & Foundations",
+            "issuer": "Anthropic",
+            "status": "Completed",
+            "note": "",
+            "fileName": "",
+            "credentialUrl": ""
+        },
+        {
+            "name": "Claude Code 101",
+            "issuer": "Anthropic",
+            "status": "Completed",
+            "note": "",
+            "fileName": "",
+            "credentialUrl": ""
+        },
+        {
+            "name": "Claude 101",
+            "issuer": "Anthropic",
+            "status": "Completed",
             "note": "",
             "fileName": "",
             "credentialUrl": ""
@@ -213,12 +252,11 @@
         ]
     },
     "menuItems": [
-        { "name": "Projects", "link": "/#projects" },
+        { "name": "About", "link": "/#about" },
+        { "name": "Work", "link": "/#projects" },
         { "name": "Experience", "link": "/#experience" },
         { "name": "Cybersecurity", "link": "/#cybersecurity" },
-        { "name": "About", "link": "/#about" },
-        { "name": "Skills", "link": "/#skills" },
-        { "name": "Education", "link": "/#education" },
+        { "name": "Résumé", "link": "/#resume" },
         { "name": "Contact", "link": "/#contact" }
     ]
 }

@@ -1,0 +1,51 @@
+---
+import SectionHeading from '../common/SectionHeading.astro';
+import { securityJourney } from '../../config/cv.json';
+---
+
+<section id="cybersecurity" class="scroll-mt-20 py-10 sm:py-14 lg:py-16">
+	<div class="container mx-auto px-4 max-w-6xl">
+		<SectionHeading
+			eyebrow="Transition"
+			title="Why Cybersecurity"
+			subtitle={securityJourney.narrative}
+		/>
+
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+			<div class="p-4 bg-background-offset border border-default rounded-xl transition-shadow duration-200 hover:shadow-lg hover:border-primary/30">
+				<div class="flex items-center gap-2.5 mb-4">
+					<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-success-bg text-success">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l5 5l10 -10" />
+						</svg>
+					</span>
+					<p class="font-mono text-xs uppercase tracking-widest text-success">
+						Applied in Professional Roles
+					</p>
+				</div>
+				<ul class="space-y-2 text-xs text-offset leading-relaxed list-disc list-outside ml-5">
+					{securityJourney.applied.map((item) => <li>{item}</li>)}
+				</ul>
+			</div>
+
+			<div class="p-4 bg-background-offset border border-default rounded-xl transition-shadow duration-200 hover:shadow-lg hover:border-primary/30">
+				<div class="flex items-center gap-2.5 mb-4">
+					<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-warning-bg text-warning">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M12 7v5l3 3" />
+							<path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18z" />
+						</svg>
+					</span>
+					<p class="font-mono text-xs uppercase tracking-widest text-warning">
+						Currently Learning
+					</p>
+				</div>
+				<ul class="space-y-2 text-xs text-offset leading-relaxed list-disc list-outside ml-5">
+					{securityJourney.learning.map((item) => <li>{item}</li>)}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

@@ -16,11 +16,11 @@ const statusClasses: Record<string, string> = {
 };
 ---
 
-<div class="p-4 bg-background-offset border border-default rounded-xl">
+<div class="p-3 bg-background-offset border border-default rounded-xl transition-shadow duration-200 hover:shadow-lg hover:border-primary/30">
 	<div class="flex items-start justify-between gap-3">
 		<div>
-			<h3 class="text-base font-semibold">{name}</h3>
-			<p class="text-sm text-offset mt-0.5">{issuer}</p>
+			<h3 class="text-xs font-semibold">{name}</h3>
+			<p class="text-xs text-offset mt-0.5">{issuer}</p>
 		</div>
 		<span class={`shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full ${statusClasses[status]}`}>
 			{status}

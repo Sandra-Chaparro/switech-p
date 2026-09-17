@@ -12,7 +12,7 @@ interface Item {
 const { items } = Astro.props;
 ---
 
-<ul class="space-y-4">
+<ul class="relative space-y-4 border-l border-default ml-[5px]">
   {items.map((item: Item) => (
     <CardListItem
       title={item.title}

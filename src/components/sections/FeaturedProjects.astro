@@ -13,19 +13,23 @@ const images: Record<string, ImageMetadata> = {
 	'salvatierra-digital.jpg': salvatierraImg,
 };
 
-const liveProjects = projects.filter((p) => p.image);
-const otherProjects = projects.filter((p) => !p.image);
+const clientProjects = projects.filter((p) => p.category === 'client');
+const engineeringProjects = projects.filter((p) => p.category === 'engineering');
 ---
 
-<section id="projects" class="scroll-mt-20 py-8 bg-background-offset/40">
+<section id="projects" class="scroll-mt-20 py-10 sm:py-14 lg:py-16 bg-background-offset/40">
 	<div class="container mx-auto px-4 max-w-6xl">
 		<SectionHeading
 			eyebrow="Work"
-			title="Featured Projects"
-			subtitle="Live websites I designed and built end-to-end."
+			title="Featured Work"
+			subtitle="A look at what I've built — from client-facing web products to full-stack software engineering work."
 		/>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-			{liveProjects.map((project) => (
+
+		<p class="font-mono text-xs uppercase tracking-widest text-offset mb-5">
+			Web &amp; Client Projects
+		</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+			{clientProjects.map((project) => (
 				<ProjectCard
 					title={project.title}
 					type={project.type}
@@ -38,18 +42,17 @@ const otherProjects = projects.filter((p) => !p.image);
 			))}
 		</div>
 
-		{otherProjects.length > 0 && (
+		{engineeringProjects.length > 0 && (
 			<>
-				<p class="mt-12 text-xs font-semibold uppercase tracking-widest text-offset mb-4">
-					Other Projects
+				<p class="mt-14 font-mono text-xs uppercase tracking-widest text-offset mb-5">
+					Software Engineering
 				</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-					{otherProjects.map((project) => (
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					{engineeringProjects.map((project) => (
 						<ProjectCard
 							title={project.title}
 							type={project.type}
 							org={project.org}
-							location={project.location}
 							years={project.years}
 							description={project.description}
 							bullets={project.bullets}

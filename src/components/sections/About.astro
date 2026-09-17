@@ -30,20 +30,20 @@ const badgeClasses: Record<string, string> = {
 };
 ---
 
-<section id="about" class="scroll-mt-20 py-8">
-	<div class="container mx-auto px-4 max-w-5xl">
-		<SectionHeading eyebrow="About" title="Who I am" />
+<section id="about" class="scroll-mt-20 py-10 sm:py-14 lg:py-16">
+	<div class="container mx-auto px-4 max-w-6xl">
+		<SectionHeading eyebrow="My Story" title="From Software Engineering to Cybersecurity" />
 
-		<p class="text-base sm:text-lg leading-relaxed text-offset max-w-3xl">
+		<p class="text-xs sm:text-sm leading-relaxed text-offset max-w-3xl">
 			{basic?.about}
 		</p>
 
-		<p class="mt-6 text-xs font-semibold uppercase tracking-widest text-offset">
+		<p class="mt-10 font-mono text-xs uppercase tracking-widest text-offset">
 			What matters to me
 		</p>
 		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
 			{pillars.map((pillar) => (
-				<div class="p-4 bg-background-offset border border-default rounded-xl">
+				<div class="p-3 bg-background-offset border border-default rounded-xl transition-shadow duration-200 hover:shadow-lg hover:border-primary/30">
 					<div class={`w-9 h-9 rounded-lg flex items-center justify-center mb-3 ${badgeClasses[pillar.color]}`}>
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
