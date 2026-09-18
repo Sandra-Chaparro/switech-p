@@ -14,7 +14,7 @@ import { basic } from '../../config/cv.json';
     <div class="relative px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
         <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div class="relative flex justify-center order-first">
-                <Image class="w-28 sm:w-36 md:w-44 lg:w-48 rounded-full object-cover ring-4 ring-background-offset shadow-lg"
+                <Image class="w-28 sm:w-36 md:w-44 lg:w-48 rounded-full object-cover ring-4 ring-primary shadow-lg"
                     src={heroImage}
                     loading="eager"
                     alt={`${basic?.name} — ${basic?.job}`} />
@@ -34,16 +34,16 @@ import { basic } from '../../config/cv.json';
 
                 <div class="mt-9 flex flex-wrap gap-3">
                     <a href="/#projects"
-                        class="inline-flex items-center justify-center px-7 py-3 text-sm text-white
+                        class="inline-flex items-center justify-center px-4 py-2 text-xs text-white
                             font-semibold transition-all duration-200 rounded
                             bg-primary hover:bg-secondary focus:bg-secondary" role="button">
                         View My Work
                     </a>
                     <a href={`/cv/${basic?.cv_file_name}`} title="Download Résumé" download
-                        class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold
+                        class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold
                             transition-all duration-200 rounded border border-default
                             hover:bg-background-offset focus:bg-background-offset" role="button">
-                        Résumé
+                            Download Resume
                     </a>
                 </div>
             </div>

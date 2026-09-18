@@ -131,8 +131,7 @@
         {
             "title": "Dental Practice Management System (EHR)",
             "category": "engineering",
-            "org": "DSD Cohort",
-            "years": "February – March 2025",
+            "years": "February 2025 – March 2025",
             "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Express.js", "JWT", "Linux", "Figma"],
             "bullets": [
                 "Architected a multi-tenant EHR platform enabling seamless support for multiple dental practices from a single codebase.",
@@ -149,8 +148,7 @@
         {
             "title": "Grocery Inventory Management System",
             "category": "engineering",
-            "org": "DSD Cohort",
-            "years": "March – April 2024",
+            "years": "March 2024 – April 2024",
             "tech": ["React", "MongoDB", "REST APIs"],
             "bullets": [
                 "Developed a full-stack React application that suggests 100+ recipes based on available ingredients and auto-generates grocery lists.",
@@ -256,7 +254,7 @@
         { "name": "Work", "link": "/#projects" },
         { "name": "Experience", "link": "/#experience" },
         { "name": "Cybersecurity", "link": "/#cybersecurity" },
-        { "name": "Résumé", "link": "/#resume" },
+        { "name": "Resume", "link": "/#resume" },
         { "name": "Contact", "link": "/#contact" }
     ]
 }

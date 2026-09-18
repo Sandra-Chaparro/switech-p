@@ -37,7 +37,7 @@ const { title, type, org, location, years, description, bullets, tech, repoUrl, 
 			<div>
 				<h3 class="text-sm font-semibold">{title}</h3>
 				{type && (
-					<p class="text-xs font-medium text-secondary pt-1">{type}</p>
+					<p class={`text-xs font-medium pt-1 ${type.includes('In Progress') ? 'text-warning' : 'text-secondary'}`}>{type}</p>
 				)}
 				{!type && (org || location) && (
 					<p class="text-xs font-medium text-secondary pt-1">
@@ -92,7 +92,7 @@ const { title, type, org, location, years, description, bullets, tech, repoUrl, 
 				{liveUrl && !repoUrl && (
 					<div class="mt-5 pt-4 border-t border-default">
 						<a href={liveUrl} target="_blank" rel="noopener noreferrer"
-							class="inline-flex items-center justify-center px-4 py-2 text-sm text-white
+							class="inline-flex items-center justify-center px-3 py-1.5 text-xs text-white
 								font-semibold transition-all duration-200 rounded
 								bg-primary hover:bg-secondary focus:bg-secondary">
 							View Project →
@@ -103,7 +103,7 @@ const { title, type, org, location, years, description, bullets, tech, repoUrl, 
 				{repoUrl && !liveUrl && (
 					<div class="mt-5 pt-4 border-t border-default">
 						<a href={repoUrl} target="_blank" rel="noopener noreferrer"
-							class="inline-flex items-center justify-center px-4 py-2 text-sm text-white
+							class="inline-flex items-center justify-center px-3 py-1.5 text-xs text-white
 								font-semibold transition-all duration-200 rounded
 								bg-primary hover:bg-secondary focus:bg-secondary">
 							View Repo →
