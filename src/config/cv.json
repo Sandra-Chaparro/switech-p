@@ -2,9 +2,9 @@
     "basic": {
         "name": "Sandra Chaparro",
         "job": "Software Engineer",
-        "tagline": "Software Engineer transitioning into Cybersecurity",
-        "summary": "I bring real software engineering and application-security experience into my transition into cybersecurity.",
-        "about": "I'm a software engineer based in the Dallas–Fort Worth area. My path started in Computer Science, moved into full-stack software engineering, and has run through production systems ever since — healthcare EHR platforms, internal dashboards, and client web products. That production work kept putting real security problems in front of me: authenticating users, authorizing access, and protecting sensitive data. Cybersecurity is the next deliberate step on that same path, not a restart — I'm building focused knowledge in threat intelligence, OSINT, threat hunting, and AI security through certification study and self-directed learning, on top of the application-security experience I already have. I care about technology that actually helps people, and I bring a developer's instincts to security problems: curious, detail-oriented, and always growing.",
+        "tagline": "Software Engineer -> Cybersecurity",
+        "summary": "",
+        "about": "I'm transitioning from software engineering into cybersecurity, exploring different areas of the field to discover where my interests and strengths align. I'm building my cybersecurity foundation through certification study and self-directed learning, while bringing the technical perspective and problem-solving skills I've developed through software engineering.",
         "location": "Dallas–Fort Worth, TX",
         "cv_file_name": "SandraChResume.pdf"
     },
@@ -46,9 +46,9 @@
             "years": "July 2024 – April 2025",
             "tech": ["React", "Bootstrap", "Astro", "Figma", "Vercel"],
             "bullets": [
-                "Designed and deployed responsive websites, improving user engagement and cross-device usability.",
+                "Designed and deployed responsive websites for small businesses, optimizing SEO, page performance, and Core Web Vitals to improve search visibility, load times, and cross-device usability.",
                 "Partnered directly with business owners to translate needs into high-performance web solutions.",
-                "Implemented automated CI/CD pipelines with Vercel and Git, achieving 100% zero-downtime deployments."
+                "Deployed client websites through GitHub-integrated Vercel workflows for automated builds and production deployments."
             ]
         },
         {
