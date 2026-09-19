@@ -8,12 +8,27 @@
         "location": "Dallas–Fort Worth, TX",
         "cv_file_name": "SandraChResume.pdf"
     },
-    "focusAreas": [
-        "Application Security",
-        "Threat Intelligence",
-        "OSINT",
-        "Threat Hunting",
-        "AI Security"
+    "roadmap": [
+        {
+            "stage": "01",
+            "title": "Software Engineering",
+            "description": "A Computer Science degree and hands-on software engineering experience — production applications, APIs, authentication and authorization, databases, and web development. The foundation I'm building security knowledge on top of."
+        },
+        {
+            "stage": "02",
+            "title": "Security Foundations",
+            "description": "Formalizing that foundation into cybersecurity knowledge through certification study (CISSP, Security+), core security concepts, and continued learning — turning that knowledge into hands-on practice next."
+        },
+        {
+            "stage": "03",
+            "title": "Security Exploration",
+            "description": "Developing practical understanding through hands-on learning and research — exploring areas like threat intelligence, OSINT, threat hunting, and AI security to identify where my technical skills and investigative mindset fit best."
+        },
+        {
+            "stage": "04",
+            "title": "Cybersecurity Career",
+            "description": "The goal: a cybersecurity role where I can apply my problem-solving ability, engineering background, and investigative mindset, alongside the security knowledge I'm building, to help solve real security problems and keep people, data, and organizations safe."
+        }
     ],
     "securityJourney": {
         "narrative": "My move into cybersecurity isn't a cold start — production engineering kept putting real security work in front of me: protecting patient data, securing APIs, and completing federal compliance training. This is a continuation of that work, not a departure from it.",
