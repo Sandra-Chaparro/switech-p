@@ -1,7 +1,11 @@
 ---
+import { contact } from '../../config/cv.json';
+
+const linkedinUrl = contact.socialLinks.find((s) => s.label === 'LinkedIn')?.link;
 ---
 
 <form
+	id="contact-form"
 	name="contact"
 	method="POST"
 	data-netlify="true"
@@ -52,6 +56,7 @@
 	</div>
 
 	<button
+		id="contact-submit"
 		type="submit"
 		class="inline-flex items-center justify-center px-4 py-2 text-xs text-white
 			font-semibold transition-all duration-200 rounded
@@ -59,4 +64,26 @@
 	>
 		Send Message
 	</button>
+
+	<!-- Temporary: form submission not ready yet -->
+	<p id="contact-status" role="status" aria-live="polite" class="hidden text-sm text-default">
+		Unable to submit, please send me a DM in
+		<a href={linkedinUrl} target="_blank" rel="noopener noreferrer" class="text-primary underline">Linkedin</a>
+	</p>
 </form>
+
+<script>
+	// Temporary: block submission until the contact form is ready.
+	const form = document.getElementById('contact-form');
+	const button = document.getElementById('contact-submit');
+	const status = document.getElementById('contact-status');
+
+	button?.addEventListener('click', (e) => {
+		e.preventDefault();
+		status?.classList.remove('hidden');
+	});
+	form?.addEventListener('submit', (e) => {
+		e.preventDefault();
+		status?.classList.remove('hidden');
+	});
+</script>
