@@ -110,10 +110,10 @@
             "category": "client",
             "type": "Software Development Business Sample",
             "tech": ["Astro", "Tailwind CSS", "Vercel"],
-            "image": "salvatierra-digital.jpg",
+            "image": "SWITECHAI.png",
             "description": "The website for my own web development business, offering custom website development, SEO, and ongoing website support.",
             "repoUrl": "",
-            "liveUrl": "https://salvatierra-digital.vercel.app/"
+            "liveUrl": "https://switechai.com/"
         },
         {
             "title": "DR Tile Solutions",
