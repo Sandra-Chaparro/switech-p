@@ -106,6 +106,16 @@
     ],
     "projects": [
         {
+            "title": "SWITECHAI",
+            "category": "client",
+            "type": "Software Development Business Sample",
+            "tech": ["Astro", "Tailwind CSS", "Vercel"],
+            "image": "salvatierra-digital.jpg",
+            "description": "The website for my own web development business, offering custom website development, SEO, and ongoing website support.",
+            "repoUrl": "",
+            "liveUrl": "https://salvatierra-digital.vercel.app/"
+        },
+        {
             "title": "DR Tile Solutions",
             "category": "client",
             "type": "Client Website",
@@ -124,16 +134,6 @@
             "description": "A website for a local barbershop featuring a gallery, testimonials, location details, FAQs, and booking/contact functionality.",
             "repoUrl": "",
             "liveUrl": "https://mcthebarber.com/"
-        },
-        {
-            "title": "Salvatierra Digital",
-            "category": "client",
-            "type": "My Software Development Business",
-            "tech": ["Astro", "Tailwind CSS", "Vercel"],
-            "image": "salvatierra-digital.jpg",
-            "description": "The website for my own web development business, offering custom website development, SEO, and ongoing website support.",
-            "repoUrl": "",
-            "liveUrl": "https://salvatierra-digital.vercel.app/"
         },
         {
             "title": "Raptor CRM",

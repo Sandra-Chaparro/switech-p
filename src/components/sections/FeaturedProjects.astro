@@ -19,34 +19,15 @@ const engineeringProjects = projects.filter((p) => p.category === 'engineering')
 
 <section id="projects" class="scroll-mt-20 py-10 sm:py-14 lg:py-16 bg-background-offset/40">
 	<div class="container mx-auto px-4 max-w-6xl">
-		<SectionHeading
-			eyebrow="Work"
-			title="Featured Work"
-			subtitle="A look at what I've built — from client-facing web products to full-stack software engineering work."
-		/>
 
-		<p class="font-mono text-xs uppercase tracking-widest text-offset mb-5">
-			Web &amp; Client Projects
-		</p>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-			{clientProjects.map((project) => (
-				<ProjectCard
-					title={project.title}
-					type={project.type}
-					description={project.description}
-					tech={project.tech}
-					repoUrl={project.repoUrl}
-					liveUrl={project.liveUrl}
-					image={project.image ? images[project.image] : undefined}
-				/>
-			))}
-		</div>
 
 		{engineeringProjects.length > 0 && (
 			<>
-				<p class="mt-14 font-mono text-xs uppercase tracking-widest text-offset mb-5">
-					Software Engineering
-				</p>
+		<SectionHeading
+			eyebrow="Project Portfolio"
+			title=""
+			subtitle="Software applications and technical projects built during my software engineering experience, featuring APIs, databases, authentication, and application functionality."
+		/>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 					{engineeringProjects.map((project) => (
 						<ProjectCard
@@ -64,5 +45,24 @@ const engineeringProjects = projects.filter((p) => p.category === 'engineering')
 				</div>
 			</>
 		)}
+				<SectionHeading
+				eyebrow=""
+				title=""
+				subtitle="Selected websites and applications developed through personal projects and freelance work."
+			/>
+	
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+				{clientProjects.map((project) => (
+					<ProjectCard
+						title={project.title}
+						type={project.type}
+						description={project.description}
+						tech={project.tech}
+						repoUrl={project.repoUrl}
+						liveUrl={project.liveUrl}
+						image={project.image ? images[project.image] : undefined}
+					/>
+				))}
+			</div>
 	</div>
 </section>
