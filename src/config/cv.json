@@ -126,6 +126,16 @@
             "liveUrl": "https://drtile-solutions.vercel.app/"
         },
         {
+            "title": "FalconProSec",
+            "category": "client",
+            "type": "Personal Project",
+            "tech": ["Astro", "Tailwind CSS", "Vercel"],
+            "image": "falconprosec.jpg",
+            "description": "An independent publication of investigations and explainers on cybersecurity, privacy, technology, and AI, with topic sections, site search, interactive learning tools, and an RSS feed.",
+            "repoUrl": "",
+            "liveUrl": "https://www.falconprosec.com/"
+        },
+        {
             "title": "MC the Barber",
             "category": "client",
             "type": "Client Website",
